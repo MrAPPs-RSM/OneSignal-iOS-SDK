@@ -72,8 +72,7 @@ typedef NS_ENUM(NSUInteger, ONE_S_LOG_LEVEL) {
 
 // Only use if you passed FALSE to autoRegister
 - (void)registerForPushNotifications;
-- (void)registerDeviceToken:(id)inDeviceToken onSuccess:(OneSignalResultSuccessBlock)successBlock onFailure:(OneSignalFailureBlock)failureBlock {
-    [self updateDeviceToken:inDeviceToken onSuccess:successBlock onFailure:failureBlock];
+- (void)registerDeviceToken:(id)inDeviceToken onSuccess:(OneSignalResultSuccessBlock)successBlock onFailure:(OneSignalFailureBlock)failureBlock;
 
 + (void)setLogLevel:(ONE_S_LOG_LEVEL)logLevel visualLevel:(ONE_S_LOG_LEVEL)visualLogLevel;
 
